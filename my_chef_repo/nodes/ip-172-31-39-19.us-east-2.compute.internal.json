@@ -1,0 +1,53 @@
+{
+  "name": "ip-172-31-39-19.us-east-2.compute.internal",
+  "normal": {
+    "knife_zero": {
+      "host": "18.223.44.220"
+    },
+    "tags": [
+
+    ]
+  },
+  "automatic": {
+    "fqdn": "ip-172-31-39-19.us-east-2.compute.internal",
+    "os": "linux",
+    "os_version": "4.15.0-1065-aws",
+    "hostname": "ip-172-31-39-19",
+    "ipaddress": "172.31.39.19",
+    "roles": [
+
+    ],
+    "recipes": [
+      "nginx",
+      "nginx::default"
+    ],
+    "platform": "ubuntu",
+    "platform_version": "18.04",
+    "cloud": {
+      "public_ipv4_addrs": [
+        "18.223.44.220"
+      ],
+      "local_ipv4_addrs": [
+        "172.31.39.19"
+      ],
+      "provider": "ec2",
+      "public_hostname": "ec2-18-223-44-220.us-east-2.compute.amazonaws.com",
+      "local_hostname": "ip-172-31-39-19.us-east-2.compute.internal",
+      "public_ipv4": "18.223.44.220",
+      "local_ipv4": "172.31.39.19"
+    },
+    "chef_packages": {
+      "chef": {
+        "version": "14.15.6",
+        "chef_root": "/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.15.6/lib"
+      },
+      "ohai": {
+        "version": "14.15.0",
+        "ohai_root": "/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/ohai-14.15.0/lib/ohai"
+      }
+    }
+  },
+  "run_list": [
+    "recipe[nginx::default]"
+  ]
+}
